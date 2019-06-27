@@ -165,9 +165,9 @@ bar {
 
 # Default Applications
 bindsym $mod+F2 exec chromium-browser --no-startup-id
-bindsym $mod+F3 exec nautilus --no-startup-id
+bindsym $mod+F3 exec nautilus 
 bindsym $mod+F4 exec spotify  --no-startup-id
-bindsym $mod+F5 exec nautilus --no-startup-id
+bindsym $mod+F5 exec nautilus 
 bindsym $mod+F6 exec nautilus --no-startup-id
 bindsym $mod+F7 exec nautilus --no-startup-id
 bindsym $mod+F8 exec nautilus --no-startup-id
@@ -223,3 +223,7 @@ bindsym $mod+Ctrl+Left workspace prev
 
 #cycle through workspaces
 bindsym $mod+Tab workspace next
+
+#monitors
+bindsym $mod+m exec xrandr --output HDMI-1-1 --off
+bindsym $mod+shift+m   exec xrandr --output HDMI-1-1 --auto --above eDP-1-1
